@@ -1,0 +1,12 @@
+<app-card>
+<article>
+    <h2>{{ task.title }}</h2>
+    <time> due: {{ task.dueDate | date: 'fullDate' }}</time>
+<!--? date pipe (documentation on angular website) that is of type fullDate -->
+    <p>{{ task.summary }}</p>
+    <p class="actions">
+        <button (click)="onCompleteTask()">Complete</button>
+    </p>
+</article>
+<!--? html article tag for DOM -->
+</app-card>
